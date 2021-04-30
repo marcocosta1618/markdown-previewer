@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+const marked = require('marked');
 
 
 export class TextInput extends Component {
@@ -15,10 +16,14 @@ export class TextInput extends Component {
       }
 
       render() {
+          const markUp = () => {
+              return {__html: marked(this.state.input)};
+          }
+          
           return (
               <>
               <input value={this.state.input} onChange={this.handleChange}></input>
-              <Preview text={this.state.input}/>
+              <Preview markdown={markUp()}></Preview>
               </>
           )
       }
@@ -26,7 +31,7 @@ export class TextInput extends Component {
 
 export const Preview = (props) => {
     return (
-        <div>{props.text}</div>
+        <div dangerouslySetInnerHTML={props.markdown}></div>
     )
 }
 
