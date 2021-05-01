@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import initialize from  './initState';
+
 const marked = require('marked');
 
 
@@ -6,7 +8,7 @@ export class Editor extends Component {
       constructor(props) {
           super(props);
           this.state = {
-              input: ''
+              input: initialize
           }
           this.handleChange = (event) => {
               this.setState({
@@ -15,6 +17,7 @@ export class Editor extends Component {
           }
       }
 
+
       render() {
           const markUp = () => {
               return {__html: marked(this.state.input)};
@@ -22,7 +25,7 @@ export class Editor extends Component {
           
           return (
               <>
-              <input value={this.state.input} onChange={this.handleChange}></input>
+              <textarea id="editor" value={this.state.input} onChange={this.handleChange}></textarea>
               <Preview markdown={markUp()}></Preview>
               </>
           )
@@ -31,7 +34,7 @@ export class Editor extends Component {
 
 export const Preview = (props) => {
     return (
-        <div dangerouslySetInnerHTML={props.markdown}></div>
+        <div id="preview" dangerouslySetInnerHTML={props.markdown}></div>
     )
 }
 
