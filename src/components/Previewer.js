@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 const marked = require('marked');
 
 
-export class TextInput extends Component {
+export class Editor extends Component {
       constructor(props) {
           super(props);
           this.state = {
