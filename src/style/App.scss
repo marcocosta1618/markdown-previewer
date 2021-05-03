@@ -1,5 +1,4 @@
 // imports:
-@import "var&mixin";
 @import "editor";
 @import "preview";
 
@@ -8,7 +7,7 @@
 }
 body {
     margin: 0;
-    background-color: $bg-col;
+    background-color: #f3f3f3;
 }
 .App {
     width: 100vw;
@@ -23,5 +22,6 @@ body {
     .App {
         flex-direction: row;
         overflow-y: hidden;
+        align-content: center;
     }
 }

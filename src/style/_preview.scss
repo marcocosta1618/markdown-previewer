@@ -3,9 +3,12 @@
     overflow-y: scroll;
     padding: 5px;
     font-size: 1em;
-    border: 1px solid #00E5AC;
+    line-height: 1.5;
+    border: 1px solid #9b9b9b;
     border-radius: 5px;
     background-color: #fff;
+    
+    // elements:
     h1 {
         margin: 0.3em 0;
         font-size: 1.8em;
@@ -43,7 +46,7 @@
 } 
 @media only screen and (min-width: 48em) {
     .flex-child2 {
-        height: 99%;
+        height: 100%;
         margin-left: 0.4em;
     }
 }
