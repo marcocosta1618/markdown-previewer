@@ -1,13 +1,12 @@
 import './style/App.css';
 import React from 'react';
-import { Editor } from './components/Previewer';
-import { Preview } from './components/Previewer';
+import { Parser } from './components/Parser';
+
 
 function App() {
   return (
     <div className="App">
-      <Editor />
-      <Preview />
+        <Parser />
     </div>
   );
 }

@@ -1,0 +1,27 @@
+// imports:
+@import "var&mixin";
+@import "editor";
+@import "preview";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: $bg-col;
+}
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.4em;
+}
+
+@media only screen and (min-width: 48em) {
+    .App {
+        flex-direction: row;
+        overflow-y: hidden;
+    }
+}

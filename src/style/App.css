@@ -1,0 +1,142 @@
+.flex-child1 {
+  -webkit-box-flex: 0.45;
+      -ms-flex: 0.45;
+          flex: 0.45;
+  width: 100%;
+  height: 40vh;
+  overflow-y: scroll;
+}
+
+.flex-child1 header h1 {
+  font-size: 1.8em;
+  margin: 0 0 0.3em;
+}
+
+.flex-child1 label {
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.flex-child1 textarea {
+  width: 100%;
+  height: 74%;
+  max-height: 74%;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-family: 'Ubuntu Mono', monospace;
+  background-color: #fff;
+  border: 1px solid #3282ec;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 48em) {
+  .flex-child1 {
+    height: 99%;
+  }
+  .flex-child1 textarea {
+    width: 100%;
+    height: 90%;
+    max-height: 90%;
+    resize: none;
+  }
+}
+
+.flex-child2 {
+  -webkit-box-flex: 0.55;
+      -ms-flex: 0.55;
+          flex: 0.55;
+  overflow-y: scroll;
+  padding: 5px;
+  font-size: 1em;
+  border: 1px solid #00E5AC;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.flex-child2 h1 {
+  margin: 0.3em 0;
+  font-size: 1.8em;
+}
+
+.flex-child2 h2 {
+  font-size: 1.4em;
+}
+
+.flex-child2 p,
+.flex-child2 ol,
+.flex-child2 ul {
+  font-size: 0.9em;
+}
+
+.flex-child2 table {
+  margin-left: 1.5em;
+  font-size: 0.9em;
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+.flex-child2 table thead {
+  background-color: #aaa;
+}
+
+.flex-child2 table th, .flex-child2 table td {
+  padding: 5px 10px;
+}
+
+.flex-child2 code,
+.flex-child2 pre {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+  color: #0050b9;
+}
+
+.flex-child2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 48em) {
+  .flex-child2 {
+    height: 99%;
+    margin-left: 0.4em;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0.4em;
+}
+
+@media only screen and (min-width: 48em) {
+  .App {
+    border: 1px solid black;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow-y: hidden;
+  }
+}
+/*# sourceMappingURL=App.css.map */

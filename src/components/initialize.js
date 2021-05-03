@@ -2,10 +2,11 @@
 
 const initState = 
 `# Hello 👋👋👋,
-## and welcome to my little markdown previewer.
-It uses [\`marked\`](https://marked.js.org/) to convert your markdown into HTML...how cool is that??  
+### and welcome to my little markdown previewer.
+It uses [marked](https://marked.js.org/) to convert your markdown into HTML...how cool is that??  
 
-Now, we can easily do a bunch of stuff with this tool. Let's make a list:
+Now, we can easily do a bunch of stuff with this tool. 
+Let's make a list:
 
 - this is an item in an unordered list;
 - this is *another one*, in italicized text;
@@ -29,7 +30,7 @@ And a table:
 |  item1  |     item2     |  item3  |
 |  item4  |     item5     |  item6  |    
 
-### But wait, there's more!
+## But wait, there's more!
 
 We can display inline code, as in \`const square = (x) => x * x;\`  and also code box, like so:
 ~~~
@@ -50,8 +51,9 @@ Want to quote your favorite author? We got you covered!
 >
 > *Isaac Asimov* 
 
-![A robot laying down on the side waving hello.](https://i.postimg.cc/z3mdq9BM/robot-01.jpg)
+Last but not least, we can also link to images!
 
+![A robot laying down on the side waving hello.](https://i.postimg.cc/z3mdq9BM/robot-01.jpg)
 `
 
 export default initState;

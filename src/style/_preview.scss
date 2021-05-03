@@ -1,0 +1,49 @@
+.flex-child2 {
+    flex: 0.55;
+    overflow-y: scroll;
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #00E5AC;
+    border-radius: 5px;
+    background-color: #fff;
+    h1 {
+        margin: 0.3em 0;
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    p,
+    ol,
+    ul {
+        font-size: 0.9em;
+    }
+    table {
+        margin-left: 1.5em;
+        font-size: 0.9em;
+        border: 1px solid grey;
+        border-collapse: collapse;
+        thead {
+            background-color: #aaa;
+        }
+        th, td {
+            padding: 5px 10px;
+        }
+    }
+    code,
+    pre {
+        font-family: 'Fira Code', monospace;
+        font-size: 0.9em;
+        color: #0050b9;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+} 
+@media only screen and (min-width: 48em) {
+    .flex-child2 {
+        height: 99%;
+        margin-left: 0.4em;
+    }
+}

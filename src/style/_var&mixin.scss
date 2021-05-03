@@ -1,0 +1,7 @@
+// vars:
+$bg-col: #f3f3f3;
+
+// mixins:
+@mixin border($col) {
+    border: 1px solid $col;
+}

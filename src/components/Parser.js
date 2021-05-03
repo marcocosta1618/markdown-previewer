@@ -8,7 +8,8 @@ marked.setOptions({
     headerIds: false
 })
 
-export class Editor extends Component {
+
+export class Parser extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -21,22 +22,28 @@ export class Editor extends Component {
         }
     }
 
-
     render() {
         const markUp = () => {
             return { __html: marked(this.state.input) };
         }
-
         return (
-            <div>
-                <textarea id="editor" value={this.state.input} onChange={this.handleChange}></textarea>
-                <Preview markdown={markUp()}></Preview>
-            </div>
+            <>
+                <div className="flex-child1">
+                    <header>
+                        <h1>Markdown Previewer </h1>
+                    </header>
+                    <label htmlFor="editor">Edit the textarea to see your markdown parsed:</label>
+                    <textarea id="editor" value={this.state.input} onChange={this.handleChange}></textarea>
+                </div>
+                <div className="flex-child2">
+                    <Preview markdown={markUp()}></Preview>
+                </div>
+            </>
         )
     }
 }
 
-export const Preview = (props) => {
+const Preview = (props) => {
     return (
         <div id="preview" dangerouslySetInnerHTML={props.markdown}></div>
     )
