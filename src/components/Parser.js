@@ -28,15 +28,17 @@ export class Parser extends Component {
         }
         return (
             <>
-                <div className="flex-child1">
-                    <header>
-                        <h1>Markdown previewer </h1>
-                    </header>
-                    <label htmlFor="editor">Edit the textarea to see your markdown parsed:</label>
-                    <textarea id="editor" value={this.state.input} onChange={this.handleChange}></textarea>
-                </div>
-                <div className="flex-child2">
-                    <Preview markdown={markUp()}></Preview>
+                <header>
+                    <h1>Markdown previewer </h1>
+                </header>
+                <div className="flex-container">
+                    <div className="flex-child1">
+                        <label htmlFor="editor">Edit the textarea to see your markdown parsed:</label>
+                        <textarea id="editor" value={this.state.input} onChange={this.handleChange}></textarea>
+                    </div>
+                    <div className="flex-child2">
+                        <Preview markdown={markUp()}></Preview>
+                    </div>
                 </div>
             </>
         )

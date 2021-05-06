@@ -4,25 +4,25 @@
     padding: 10px;
     font-size: 1em;
     line-height: 1.5;
-    border: 1px solid #9b9b9b;
     border-radius: 5px;
-    background-color: #fff;
-    
-    // elements:
     h1 {
         margin: 0.3em 0;
         font-size: 1.8em;
+        font-family: 'Lato', sans-serif;
     }
     h2 {
         font-size: 1.4em;
+        font-family: 'Lato', sans-serif;
     }
     p,
     ol,
     ul {
         font-size: 0.9em;
+        font-family: 'Lato', sans-serif;
     }
     table {
         margin-left: 1.5em;
+        font-family: 'Lato', sans-serif;
         font-size: 0.9em;
         border: 1px solid grey;
         border-collapse: collapse;
@@ -42,6 +42,7 @@
     img {
         max-width: 100%;
         height: auto;
+        border-radius: 5px;
     }
 } 
 @media only screen and (min-width: 48em) {

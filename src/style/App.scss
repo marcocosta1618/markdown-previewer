@@ -6,22 +6,40 @@
     box-sizing: border-box;
 }
 body {
+    font-family: 'Lato', sans-serif;
     margin: 0;
     background-color: #f3f3f3;
 }
+
 .App {
-    width: 100vw;
-    height: 100vh;
+    padding: 0.5em;
+}
+
+header {
+    h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0.25em;
+        margin: 0 0 0.5em;
+        border-radius: 10px;
+        background: linear-gradient(to right, #f3f3f3, #ccf);
+    }
+}
+
+.flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 0.4em;
 }
 
 @media only screen and (min-width: 48em) {
-    .App {
+    .flex-container {
         flex-direction: row;
-        overflow-y: hidden;
-        align-content: center;
+    }
+    header {
+        h1 {
+            font-size: 1.9em;
+            margin: 0 0 1em;
+        }
     }
 }
