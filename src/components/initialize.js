@@ -54,6 +54,8 @@ Want to quote your favorite author? We got you covered!
 
 Last but not least, we can also link to images!
 
+Have a look at the [Markdown Guide](https://www.markdownguide.org/) to see what else you can do.
+
 ![A robot laying down on the side waving hello.](https://i.postimg.cc/z3mdq9BM/robot-01.jpg)
 `
 

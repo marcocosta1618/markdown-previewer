@@ -22,3 +22,22 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 src/style/App.css.map
+build FCC/asset-manifest.json
+build FCC/favicon.ico
+build FCC/index.html
+build FCC/logo192.png
+build FCC/logo512.png
+build FCC/manifest.json
+build FCC/robots.txt
+build FCC/surge-README.txt
+build FCC/static/css/main.180fc81e.chunk.css
+build FCC/static/css/main.180fc81e.chunk.css.map
+build FCC/static/js/2.ab45f942.chunk.js
+build FCC/static/js/2.ab45f942.chunk.js.LICENSE.txt
+build FCC/static/js/2.ab45f942.chunk.js.map
+build FCC/static/js/3.644e7d97.chunk.js
+build FCC/static/js/3.644e7d97.chunk.js.map
+build FCC/static/js/main.a676674e.chunk.js
+build FCC/static/js/main.a676674e.chunk.js.map
+build FCC/static/js/runtime-main.2c945924.js
+build FCC/static/js/runtime-main.2c945924.js.map
