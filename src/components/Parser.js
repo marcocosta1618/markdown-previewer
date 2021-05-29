@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import initState from './initialize';
+import Footer from './Footer';
 
 const marked = require('marked');
 marked.setOptions({
@@ -40,6 +41,7 @@ export class Parser extends Component {
                         <Preview markdown={markUp()}></Preview>
                     </div>
                 </div>
+                <Footer />
             </>
         )
     }

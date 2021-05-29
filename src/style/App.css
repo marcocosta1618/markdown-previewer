@@ -102,6 +102,19 @@
   }
 }
 
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  margin: -8px;
+  padding: 0.5em;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f3f3f3), to(#9F9FFF));
+  background: linear-gradient(to bottom, #f3f3f3 5%, #9F9FFF);
+}
+
+footer p {
+  margin-bottom: 0px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
