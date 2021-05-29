@@ -6,6 +6,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -29,6 +30,7 @@ header {
 }
 
 .flex-container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
