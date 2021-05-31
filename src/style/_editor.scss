@@ -6,7 +6,18 @@
         display: block;
         font-family: 'Lato', sans-serif;
         font-size: 1em;
-        margin: 0 2px 8px;
+        width: 100%;
+        margin: 14px 2px 8px;
+    }
+    button {
+        margin-bottom: 1em;
+        cursor: pointer;
+        border: 1px solid grey;
+        border-radius: 5px;
+        background-color: #ffc690;
+        &:hover {
+            background-color: #ffe4ca;
+        }
     }
     textarea {
         font-family: 'Ubuntu Mono', monospace;
@@ -27,7 +38,10 @@
         flex: 0.45;
         padding: 1px 5px;
         textarea {
-            height: 96%;
+            height: 93%;
+        }
+        label {
+            width: 80%;
         }
     }
 }

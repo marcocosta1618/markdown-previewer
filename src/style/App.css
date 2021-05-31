@@ -3,16 +3,25 @@
   padding: 5px 5px 0;
   border-radius: 5px;
 }
-
 .flex-child1 label {
   display: block;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1em;
-  margin: 0 2px 8px;
+  width: 100%;
+  margin: 14px 2px 8px;
 }
-
+.flex-child1 button {
+  margin-bottom: 1em;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #ffc690;
+}
+.flex-child1 button:hover {
+  background-color: #ffe4ca;
+}
 .flex-child1 textarea {
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: "Ubuntu Mono", monospace;
   font-size: 0.95em;
   line-height: 1.5;
   width: 100%;
@@ -27,68 +36,58 @@
 
 @media only screen and (min-width: 48em) {
   .flex-child1 {
-    -webkit-box-flex: 0.45;
-        -ms-flex: 0.45;
-            flex: 0.45;
+    flex: 0.45;
     padding: 1px 5px;
   }
   .flex-child1 textarea {
-    height: 96%;
+    height: 93%;
+  }
+  .flex-child1 label {
+    width: 80%;
   }
 }
-
 .flex-child2 {
-  -webkit-box-flex: 0.55;
-      -ms-flex: 0.55;
-          flex: 0.55;
+  flex: 0.55;
   overflow-y: scroll;
   padding: 10px;
   font-size: 1em;
   line-height: 1.5;
   border-radius: 5px;
 }
-
 .flex-child2 h1 {
   margin: 0.3em 0;
   font-size: 1.8em;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
-
 .flex-child2 h2 {
   font-size: 1.4em;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
-
 .flex-child2 p,
 .flex-child2 ol,
 .flex-child2 ul {
   font-size: 0.9em;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
-
 .flex-child2 table {
   margin-left: 1.5em;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 0.9em;
   border: 1px solid grey;
   border-collapse: collapse;
 }
-
 .flex-child2 table thead {
   background-color: #aaa;
 }
-
 .flex-child2 table th, .flex-child2 table td {
   padding: 5px 10px;
 }
-
 .flex-child2 code,
 .flex-child2 pre {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   font-size: 0.9em;
   color: #0050b9;
 }
-
 .flex-child2 img {
   max-width: 100%;
   height: auto;
@@ -101,27 +100,23 @@
     margin-left: 0.4em;
   }
 }
-
 footer {
   text-align: center;
   font-size: 0.8em;
-  margin: -8px;
+  margin: 48px -8px -8px;
   padding: 0.5em;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f3f3f3), to(#9F9FFF));
   background: linear-gradient(to bottom, #f3f3f3 5%, #9F9FFF);
 }
-
 footer p {
   margin-bottom: 0px;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0;
   background-color: #f3f3f3;
 }
@@ -131,37 +126,28 @@ body {
 }
 
 header h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.5em;
   text-align: center;
   padding: 0.25em;
   margin: 0 0 0.5em;
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, right top, from(#f3f3f3), to(#ccf));
   background: linear-gradient(to right, #f3f3f3, #ccf);
 }
 
 .flex-container {
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 48em) {
   .flex-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
+
   header h1 {
     font-size: 1.9em;
     margin: 0 0 1em;
   }
-}
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */
