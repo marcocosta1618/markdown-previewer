@@ -4,12 +4,14 @@
     border-radius: 5px;
     label {
         display: block;
-        font-family: 'Lato', sans-serif;
+        font-family: inherit;
         font-size: 1em;
         width: 100%;
         margin: 14px 2px 8px;
     }
     button {
+        font-family: inherit;
+        font-size: 0.8em;
         margin-bottom: 1em;
         cursor: pointer;
         border: 1px solid grey;
